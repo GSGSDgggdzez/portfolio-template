@@ -1253,3 +1253,153 @@ input:checked {
   --thumb-position: 100%;
   background-color: var(--track-active);
 }
+
+
+/* these is for me */
+
+.achievements {
+    padding: 4rem 0;
+    background: var(--gradient-bg);
+}
+
+.achievement-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.achievement-box {
+    background: var(--card-bg);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-box:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-box h3 {
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.achievement-box p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.download-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.download-section .btn-cta {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.download-section .btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.package-includes {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.contact-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.hire-alert {
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent-transparent);
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .contact-textbox {
+    padding: 4rem;
+    margin: 2rem auto;
+    width: 80%;
+    background: var(--bg-secondary);
+    border-radius: 24px;
+  }
+
+  .download-section {
+    margin-top: 3rem;
+  }
+
+  .download-section .btn-cta {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+  }
+
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 80%;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-textbox {
+    width: 70%;
+    padding: 5rem;
+  }
+}
+
